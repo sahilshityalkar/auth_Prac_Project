@@ -4,7 +4,10 @@
   "description": "mini project for learn Authentication",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js",
+    "devstart": "nodemon ./index.js",
+    "serverstart": "SET DEBUG=express-auth_prac_project:* & npm run devstart"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +18,9 @@
     "express-session": "^1.17.3",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.3",
+    "nodemon": "^3.0.2",
     "passport": "^0.7.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2"
   }
 }
